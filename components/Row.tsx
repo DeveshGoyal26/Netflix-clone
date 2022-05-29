@@ -39,7 +39,7 @@ export const Row = ({ title, movies }: Props) => {
           className={`absolute top-0 left-2 bottom-0 z-40 m-auto h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 ${
             !isMoved && 'hidden'
           }`}
-          // onClick={() => handleClick('left')}
+          onClick={() => handleClick('left')}
         />
 
         <div
