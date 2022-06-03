@@ -1,23 +1,43 @@
-# Next.js + Tailwind CSS Example
+# Netflix
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Netflix is a  is an American subscription streaming service and production company. Here you will find all types of movies tv 
+shows to watch and enjoy with your friends and family.
+This is one my side projects as well. In this project I tried to build erverything with some online tutorial's and I am happy with it. 
+I tried to use those library's which, I was not good at or I was not familiar with. Because of this I was able to make a good looking website and
+was able to learn more and was able to get out of my comfort zone.
 
-## Deploy your own
+here is the link to checkout the site - [click here](https://my-ottplatform-clone-five-omega.vercel.app/login).
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Tech Stack
+- Tailwind 
+- React 
+- Firebase 
+- themoviedb Api 
+- Typescript
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Inspiration material
+- Netflix  [netflix](https://www.netflix.com/in/)
 
-## How to use
+## Features
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- Random Slides of movies
+- Movies slider
+- Individual moive info
+- Movie trailer functionality
+- Server side rendering
+- Login and Sign in authentication with firebase
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
-```
+## Screenshots
+<img src="images/Medura1.png" width="90%">
+<img src="images/Medura2.png" width="90%">
+<img src="images/Medura3.png" width="90%">
+<img src="images/Medura4.png" width="90%">
+<img src="images/Medura5.png" width="90%">
+<img src="images/Medura6.png" width="90%">
+<img src="images/Medura7.png" width="90%">
+<img src="images/Medura8.png" width="90%">
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Conclusions
+- I had so much fun building this website that I want to build some more. Even though I had to scrifice some of my free time to build it
+  and during that time I had so many difficulties but i am so happy with it and I am so glad that I stuck through it and made to the end.
+
