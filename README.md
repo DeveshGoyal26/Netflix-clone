@@ -28,14 +28,10 @@ here is the link to checkout the site - [click here](https://my-ottplatform-clon
 - Login and Sign in authentication with firebase
 
 ## Screenshots
-<img src="images/Medura1.png" width="90%">
-<img src="images/Medura2.png" width="90%">
-<img src="images/Medura3.png" width="90%">
-<img src="images/Medura4.png" width="90%">
-<img src="images/Medura5.png" width="90%">
-<img src="images/Medura6.png" width="90%">
-<img src="images/Medura7.png" width="90%">
-<img src="images/Medura8.png" width="90%">
+<img src="images/Netflix1.png" width="90%">
+<img src="images/Netflix2.png" width="90%">
+<img src="images/Netflix3.png" width="90%">
+<img src="images/Netflix4.png" width="90%">
 
 ## Conclusions
 - I had so much fun building this website that I want to build some more. Even though I had to scrifice some of my free time to build it
