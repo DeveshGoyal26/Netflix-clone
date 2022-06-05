@@ -34,6 +34,12 @@ here is the link to checkout the site - [click here](https://netflix-clone-qy2y4
 <img src="images/Netflix2.png" width="90%">
 <img src="images/Netflix3.png" width="90%">
 <img src="images/Netflix4.png" width="90%">
+<img src="images/Netflix5.png" width="90%">
+<img src="images/Netflix6.png" width="90%">
+<img src="images/Netflix7.png" width="90%">
+<img src="images/Netflix8.png" width="90%">
+<img src="images/Netflix9.png" width="90%">
+<img src="images/Netflix10.png" width="90%">
 
 ## Conclusions
 - I had so much fun building this website that I want to build some more. Even though I had to scrifice some of my free time to build it
