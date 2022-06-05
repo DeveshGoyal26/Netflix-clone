@@ -6,7 +6,7 @@ This is one my side projects as well. In this project I tried to build erverythi
 I tried to use those library's which, I was not good at or I was not familiar with. Because of this I was able to make a good looking website and
 was able to learn more and was able to get out of my comfort zone.
 
-here is the link to checkout the site - [click here](https://netflix-clone-qy2y4totb-deveshgoyal26.vercel.app/).
+here is the link to checkout the site - [click here](https://my-ott-clone-deveshgoyal26.vercel.app/).
 
 ## Tech Stack
 - Tailwind 
