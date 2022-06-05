@@ -1,12 +1,18 @@
+import { getProducts, Product } from '@stripe/firestore-stripe-payments'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRecoilValue } from 'recoil'
-import { modalState } from '../atoms/modelAtoms'
+import { modalState, movieState } from '../atoms/modelAtoms'
 import { Banner } from '../components/Banner'
 import { Header } from '../components/Header'
 import { Model } from '../components/Model'
+import Plans from '../components/Plans'
 import { Row } from '../components/Row'
+import useAuth from '../hooks/useAuth'
+import useList from '../hooks/useList'
+import useSubscription from '../hooks/useSubcription'
+import payments from '../lib/stripe'
 import { Movie } from '../typings'
 import requests from '../utils/requests'
 
@@ -19,6 +25,7 @@ interface Props {
   horrorMovies: Movie[]
   romanceMovies: Movie[]
   documentaries: Movie[]
+  products: Product[]
 }
 
 const Home = ({
@@ -30,8 +37,17 @@ const Home = ({
   romanceMovies,
   topRated,
   trendingNow,
+  products,
 }: Props) => {
+  const { user, loading } = useAuth()
   const showModal = useRecoilValue(modalState)
+  const subscription = useSubscription(user)
+  const movie = useRecoilValue(movieState)
+  const list = useList(user?.uid)
+
+  if (loading || subscription === null) return null
+
+  if (!subscription) return <Plans products={products} />
 
   return (
     <div
@@ -52,6 +68,7 @@ const Home = ({
           <Row title="Top Rated" movies={topRated} />
           <Row title="Action Thrillers" movies={actionMovies} />
           {/* My List Component */}
+          {list.length > 0 && <Row title="My List" movies={list} />}
           <Row title="Comedies" movies={comedyMovies} />
           <Row title="Scary Movies" movies={horrorMovies} />
           <Row title="Romance Movies" movies={romanceMovies} />
@@ -67,6 +84,13 @@ const Home = ({
 export default Home
 
 export const getServerSideProps = async () => {
+  const products = await getProducts(payments, {
+    includePrices: true,
+    activeOnly: true,
+  })
+    .then((res) => res)
+    .catch((err) => console.log(err.message))
+
   const [
     netflixOriginals,
     trendingNow,
@@ -97,6 +121,7 @@ export const getServerSideProps = async () => {
       horrorMovies: horrorMovies.results,
       romanceMovies: romanceMovies.results,
       documentaries: documentaries.results,
+      products,
     },
   }
 }

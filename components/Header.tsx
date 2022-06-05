@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useRecoilValue } from 'recoil'
 import useAuth from '../hooks/useAuth'
+import BasicMenu from './BasicMenu'
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -36,6 +37,8 @@ export const Header = () => {
           className="cursor-pointer object-contain"
         />
 
+        <BasicMenu />
+
         <ul className="hidden space-x-4 md:flex">
           <li className="headerLink">Home</li>
           <li className="headerLink">TV Shows</li>
@@ -49,13 +52,13 @@ export const Header = () => {
         <SearchIcon className="hidden h-6 w-6 sm:inline" />
         <p className="hidden cursor-pointer lg:inline">Kids</p>
         <BellIcon className="h-6 w-6 cursor-pointer" />
-        {/* <Link href="/account"> */}
-        <img
-          src="https://rb.gy/g1pwyx"
-          alt=""
-          className="cursor-pointer rounded"
-        />
-        {/* </Link> */}
+        <Link href="/account">
+          <img
+            src="https://rb.gy/g1pwyx"
+            alt=""
+            className="cursor-pointer rounded"
+          />
+        </Link>
       </div>
     </header>
   )
