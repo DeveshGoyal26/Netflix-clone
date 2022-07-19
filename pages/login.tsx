@@ -29,6 +29,10 @@ const Login = () => {
     <div className="relative flex h-screen w-screen flex-col bg-black md:items-center md:justify-center md:bg-transparent">
       <Head>
         <title>Netflix</title>
+        <meta
+          name="google-site-verification"
+          content="bP9pHB8K8_i9SFg4inPotihF9Ts_bfBnHdUR-dPPQGU"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
