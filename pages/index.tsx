@@ -116,16 +116,18 @@ export const getServerSideProps = async () => {
   ])
 
   return {
-    props: {
-      netflixOriginals: netflixOriginals.results,
-      trendingNow: trendingNow.results,
-      topRated: topRated.results,
-      actionMovies: actionMovies.results,
-      comedyMovies: comedyMovies.results,
-      horrorMovies: horrorMovies.results,
-      romanceMovies: romanceMovies.results,
-      documentaries: documentaries.results,
-      products,
-    },
+    props: JSON.parse(
+      JSON.stringify({
+        netflixOriginals: netflixOriginals.results,
+        trendingNow: trendingNow.results,
+        topRated: topRated.results,
+        actionMovies: actionMovies.results,
+        comedyMovies: comedyMovies.results,
+        horrorMovies: horrorMovies.results,
+        romanceMovies: romanceMovies.results,
+        documentaries: documentaries.results,
+        products,
+      })
+    ),
   }
 }
