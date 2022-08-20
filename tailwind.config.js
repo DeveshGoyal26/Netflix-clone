@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'jit',
+  mode: "jit",
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       textShadow: {
-        md: '2px 2px 4px rgb(0 0 0 / 45%);',
+        md:'2px 2px 4px rgb(0 0 0 / 45%);',
       },
       backgroundImage: {
         'gradient-to-b':
@@ -16,8 +16,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwindcss-textshadow'),
     require('tailwind-scrollbar-hide'),
     require('tailwind-scrollbar'),
+    require('@tailwindcss/line-clamp'),
+    require('tailwindcss-textshadow'),
   ],
 }
